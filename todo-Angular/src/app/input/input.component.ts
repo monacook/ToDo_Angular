@@ -1,12 +1,15 @@
-import { Component, MatInputModule } from '@angular/material/input';
+import { Component, OnInit } from '@angular/core';
 
-@Component ({
-    selector: 'input[matInput]',
-    templateUrl: './input.component.html',
-    styleUrls: ['./input.component.css']
+@Component({
+  selector: 'app-input',
+  templateUrl: './input.component.html',
+  styleUrls: ['./input.component.css']
 })
+export class InputComponent implements OnInit {
 
-export class Input {
-    // logic to take input into store 
-    @Input() type: string
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
 }
