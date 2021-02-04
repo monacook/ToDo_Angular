@@ -10,18 +10,26 @@ export class TodosComponent implements OnInit {
 
   todos: Todo[];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.todos = [
       {
-        content:'First todo',
+        content: "First todo",
         completed: false
       },
       {
-        content:'Second todo',
+        content:"Second todo",
         completed: true
       }
     ]
+  }
+
+  toggleDone(id) {
+    this.todos.map((v, i) => {
+      if(i == id) v.completed = !v.completed;
+      return v;
+    })
   }
 }
