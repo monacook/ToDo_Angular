@@ -32,4 +32,8 @@ export class TodosComponent implements OnInit {
       return v;
     })
   }
+
+  deleteTask(id) {
+    this.todos = this.todos.filter((v, i) => i !== id);
+  }
 }
