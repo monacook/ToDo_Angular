@@ -4,14 +4,13 @@ import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InputComponent } from './input/input.component';
-import { UserSettingsFormComponent } from './user-settings-form/user-settings-form.component';
+import { TodosComponent } from './components/todos/todos.component';
+import { }
 
 @NgModule({
   declarations: [
     AppComponent,
-    InputComponent,
-    UserSettingsFormComponent
+    TodosComponent
   ],
   imports: [
     BrowserModule,

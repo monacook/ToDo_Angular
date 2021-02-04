@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserSettingsFormComponent } from './user-settings-form.component';
+import { TodosComponent } from './todos.component';
 
-describe('UserSettingsFormComponent', () => {
-  let component: UserSettingsFormComponent;
-  let fixture: ComponentFixture<UserSettingsFormComponent>;
+describe('TodosComponent', () => {
+  let component: TodosComponent;
+  let fixture: ComponentFixture<TodosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserSettingsFormComponent ]
+      declarations: [ TodosComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UserSettingsFormComponent);
+    fixture = TestBed.createComponent(TodosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
